@@ -1,0 +1,27 @@
+function Decoder(bytes, port) {
+    if(bytes.length == 14) {
+    
+        var humidity = (bytes[0]<<8) | bytes[1];
+        var temperature = (bytes[2]<<8) | bytes[3];
+        var O3 = (bytes[4]<<8) | bytes[5];
+        var H2S = (bytes[6]<<8) | bytes[7];
+        var NH3 = (bytes[8]<<8) | bytes[9];
+        var pm25 = (bytes[10]<<8) | bytes[11];
+        var pm10 = (bytes[12]<<8) | bytes[13];
+        
+        return {
+        	
+        	'hum': humidity/100,
+        	'temp': temperature/100,
+        	'O3': O3/100,
+        	'H2S': H2S/100,
+        	'NH3': NH3/100,
+		'pm25': pm25/ 100,
+            	'pm10': pm10/100
+        }
+    } else {
+        return {
+            'error': 'payload unknown'
+        }
+    }
+}

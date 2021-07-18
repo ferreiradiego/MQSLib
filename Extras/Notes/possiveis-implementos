@@ -1,0 +1,3 @@
+Possiveis implementações:
+
+- Adicionar módulo RTC junto ao módulo SD para construção do datalogger: https://www.filipeflop.com/blog/datalogger-com-arduino-cartao-sd/

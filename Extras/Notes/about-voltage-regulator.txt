@@ -1,0 +1,5 @@
+In MQ-7 and MQ-9  - Gas Sensor for Carbon Monoxide (CO) - the heater voltage VH should be 1.5V then it should be used a voltage regulator.
+
+In my tests I tested the LM317T Voltage Regulator and the circuit presented in FIGURE 1 - STANDART APPLICATION from datasheet.
+
+The values for R1 and R2 are 240 Ohms and 47 Ohms, respectively.
